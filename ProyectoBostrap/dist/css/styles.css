@@ -1,0 +1,275 @@
+body {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR */
+.custom-navbar {
+  background-color: #a6270c;
+}
+
+.navbar-brand,
+.nav-link,
+footer a {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  background-color: #082b89;
+  color: #000000;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon-custom {
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+
+.navbar-toggler-icon-custom::before,
+.navbar-toggler-icon-custom::after,
+.navbar-toggler-icon-custom div {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #000000;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon-custom::before { top: 0; }
+.navbar-toggler-icon-custom div { top: 7.5px; }
+.navbar-toggler-icon-custom::after { bottom: 0; }
+
+/* FOOTER */
+.custom-footer {
+  background-color: #c92c0a;
+  padding: 20px;
+}
+
+/* BOTON PERSONALIZADO */
+.btn-custom {
+  background-color: #c92c0a;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #000000;
+  color: #000000;
+}
+
+/* BIOGRAFÍA */
+.bio-section {
+  position: relative;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.bio-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../imagenes/fondo oscuro.jpg') center/cover no-repeat;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.bio-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.bio-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-text,
+.club-text,
+.product-text,
+.moment-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CLUBS */
+.club-section {
+  position: relative;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.club-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.club-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.real-madrid::before {
+  background-image: url('../imagenes/FONDO DE REAL MADRID.png');
+}
+.manchester-united::before {
+  background-image: url('../imagenes/logounited.jpg');
+}
+.juventus::before {
+  background-image: url('../imagenes/estadiojuve.jpg');
+}
+.sporting::before {
+  background-image: url('../imagenes/sportingfondo.jpg');
+}
+
+.club-img-container img {
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+}
+.club-img-container img:hover {
+  transform: scale(1.05);
+}
+
+/* PRODUCTOS */
+.product-section {
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.product-img-container img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.product-img-container img:hover {
+  transform: scale(1.05);
+}
+
+/* MOMENTOS */
+.moment-section {
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 40px 20px;
+}
+
+.video-container iframe {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.02);
+}
+
+.carousel-item h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.carousel-item ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.carousel img {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.marco-box {
+  background-color: #000000;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Unete */
+
+.cr7-section {
+  padding: 40px 20px;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.cr7-frase {
+  font-style: italic;
+  color: #cccccc;
+}
+
+.cr7-form-box {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.cr7-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f44336;
+  font-size: 1.5rem;
+}
+
+.cr7-btn {
+  background-color: #a6270c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cr7-btn:hover {
+  background-color: #e63946;
+  transform: scale(1.03);
+}
+
+.cr7-footer {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
